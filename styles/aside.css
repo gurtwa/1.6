@@ -1,0 +1,232 @@
+aside {
+  height: 100%;  
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 24px;
+  height: auto;
+  max-width: 320px;
+  min-width: 320px;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+  z-index: 9995;
+  background-color: #fff; /* Добавьте фон */
+}
+
+  .burger-menu{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+    
+  }  
+  ul{
+  margin: 0;
+  padding: 0;
+  }
+  nav{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  }
+  .burger-menu__list {
+  position: absolute;
+  left: 0;
+  font-family: 'TTLakes', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: left;
+  list-style-type: none;
+  
+  
+  }
+  .burger-menu__item {
+  font-family: 'TTLakes', sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative; 
+  }
+  
+  .burger-menu__item:hover {
+  color: #7E7E82;
+  
+  }
+  
+  .burger-menu__item:hover::before {
+  content: ''; 
+  width: 4px; 
+  height: 100%; 
+  background-color: #00CED1; 
+  border-top-right-radius: 4px; 
+  border-bottom-right-radius: 4px; 
+  
+  }
+  
+  
+  .burger-menu__item {
+  font-family: 'TTLakes', sans-serif;
+  opacity: 0.8; 
+  transition: opacity 0.3s; 
+  }
+  
+  .burger-menu__item {
+  position: relative; 
+  
+  }
+  
+  
+  
+  .burger-menu__item:hover {
+  color: #7E7E82; 
+  }
+  
+  .burger-menu__item:hover::before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  background-color: #00CED1;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  }
+  
+  .burger-menu__item {
+  opacity: 0.8;
+  transition: opacity 0.3s;
+  }
+  
+  .burger-menu__button:hover {
+  color: #7E7E82; 
+  }
+  
+  .burger-menu--email {
+  font-family: 'TTLakes', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-align: left;
+  color: #1B1C21;
+  padding: 0;
+  margin: 0;
+  margin-top: 16px;
+  
+  
+  }
+  
+  .burger-menu--number{
+  font-family: 'TTLakes', sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.6000000238418579px;
+  text-align: left;
+  color:  #1B1C21;
+  font-weight: bold;
+  padding-top: 0px;
+  padding: 0;
+  margin: 0;
+  margin-top: 12px;
+  
+  padding-bottom: 40px;
+  }
+  .footer__items{
+  padding-bottom: 40px;
+  }
+  .footer__items .button {
+  width: 24px;
+  height: 24px;
+  opacity: 0px;  
+  border-radius: 10%;
+  font-family: 'TTLakes', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  border: none;
+  outline: none; 
+  color: #1B1C21; 
+  background-color: white; 
+  transition: color 0.3s, box-shadow 0.3s; 
+  font-weight: bold;
+  box-shadow: 0 0 transparent; }
+  
+  .footer__items .button:hover {
+  color: rgb(139, 139, 139); 
+  background-color: transparent; 
+  box-shadow: none; 
+  transition: color 0.3s; 
+  box-shadow: 0 0 transparent;
+  }
+  
+  
+  
+  @media screen and (min-width: 1366px) {
+
+      .aside{
+        display: flex; /* Отображаем блок на больших экранах */
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0; /* Прилегает к правому краю */
+        width: 320px; /* Фиксированная ширина */
+        height: 100%;
+        background-color: #fff;
+        z-index: 9999;
+        padding: 24px;
+        box-shadow: -16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+      }
+    
+      .aside--open {
+        right: 0; /* Открываем блок с правой стороны */
+      }
+
+        aside {
+          display: flex; /* Отображаем aside на больших экранах */
+          flex-direction: column;
+          position: fixed;
+          top: 0;
+          width: 320px;
+          height: 100%;
+          background-color: #fff;
+          z-index: 9999;
+          padding: 24px;
+          box-shadow: -16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+          transition: right 0.3s ease-in-out; /* Добавляем анимацию для плавного открытия */
+        }
+      
+        /* Стили для открытого состояния */
+        .aside--open {
+          right: 0; /* Открываем aside */
+        }
+      
+      
+
+    }
+    .menu {
+      overflow-x: hidden;
+      overflow-y: auto;
+      white-space: nowrap;
+      padding: 20px;
+      border-radius: 10px;
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 30px;
+    }
+  
+    .menu__list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+  
+    .menu__item {
+      white-space: nowrap;
+      margin-right: 20px;
+      flex-shrink: 0;
+    }
+  

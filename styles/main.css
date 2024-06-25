@@ -1,0 +1,95 @@
+.main {
+    display: flex;
+    width: 100%;
+  }
+  
+  .main__text {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    padding: 15px;
+  }
+  
+  .main__button {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .main__button-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    background-image: url('../svg/expand.svg');
+    background-size: cover;
+    border: none;
+  }
+  
+  .main__image {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+  }
+  
+  .main__button span {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  /* Медиа-запросы */
+  @media screen and (max-width: 768px) {
+    .main {
+      flex-direction: column;
+    }
+  
+    .main__column--image {
+      order: 2;
+    }
+  
+    .main__column--text {
+      order: 1;
+    }
+    .main__text.two{
+        display: none;
+    }
+    .main__column{
+        width: 100%;
+    }
+
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .header__link-text,
+    .header__text {
+      display: none;
+    }
+    .main__image {
+        width: 100%;
+        height: auto;
+        background-size: cover;
+      }
+      .main__column{
+        width: 50%;
+    }
+  }
+
+  
+  @media screen and (min-width: 1025px) {
+    .header__link-text,
+    .header__text {
+      display: block;
+    }
+    .main__column{
+        width: 50%;
+    }
+  }

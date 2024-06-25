@@ -1,0 +1,202 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.header__container img {
+  margin: 10px;
+}
+
+.header__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__column {
+  display: flex;
+  align-items: center;
+}
+
+.header__column--menu {
+  width: auto;
+}
+
+.header__column--actions button {
+  margin-left: auto;
+}
+
+.header__column--contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.header__button-image {
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  background-image: url("../svg/burger.svg");
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+}
+
+.header__title {
+  width: 100%;
+  border-top: 1px solid #d9fff5; 
+
+}
+
+.header__title h1 {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+.header__shadow {
+  width: 100%;
+  border-bottom: 0px solid #D9FFF5;
+}
+
+.header__line {
+  text-decoration: none;
+  align-self: flex-start;
+}
+
+.header__column--title {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.header__text {
+  font-size: 28px;
+  line-height: 40px;
+  padding-left: 15px;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.header__actions img {
+  margin-right: 10px;
+}
+
+.header__link {
+  background: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  transition: filter 0.3s; 
+  border-radius: 50%; 
+  margin-right: 15px;  
+  text-align: center;
+  display: flex;
+  padding: 10px; /* Добавление отступов */
+}
+
+.header__link img {
+  height: 40px; /* Размеры изображения */
+  width: 40px;  /* Размеры изображения */
+}
+
+.img.header__link{
+  height: 40px;
+  width: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  transition: filter 0.3s; 
+  border-radius: 50%; 
+  
+
+
+}
+@media screen and (min-width: 768px) {
+  .swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+  }
+
+}
+@media screen and (max-width: 600px) {
+  .header__image-lineone {
+      display: none;
+  }
+  .header__connection {
+      display: none;
+  }
+  .header__actions p:nth-child(1) {
+      display: none;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .header__link-text {
+      display: none;
+  }
+  .header__link {
+    justify-content: center;
+}
+
+.header__link-text {
+    display: none;
+}
+
+.header__link img {
+    margin: 0;
+    align-self: center;
+}
+
+}
+
+@media screen and (min-width: 1366px) {
+  .header__image-lineone {
+      display: none;
+  }
+  .header__image-linetwo {
+      display: none;
+  }
+  .header__column--menu, .header__connection, .header__shadow {
+      display: none;
+  }
+  .header__actions {
+      padding-top: 20px;
+  }
+  header .header__container .header__column--title {
+      align-items: flex-start;
+  }
+  header {
+      position: relative;
+  }
+  .header__title {
+      position: absolute;
+      z-index: 1;
+  }  
+  .header__link {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header__link-text {
+    text-align: left;
+    flex: 1;
+}
+
+.header__link img {
+    align-self: center;
+    flex: 0;
+}
+}

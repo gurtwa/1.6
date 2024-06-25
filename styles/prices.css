@@ -1,0 +1,245 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.prices__title {
+  color: #7e7e82;
+  font-family: TT Lakes;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  padding: 16px;
+  @media screen and (min-width: 768px) {
+    padding: 16px 0 16px 24px;
+  }
+  @media screen and (min-width: 1120px) {
+    padding-left: 32px;
+    margin-bottom: 24px;
+  }
+}
+
+.prices-container {
+  display: flex;
+  padding: 16px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 24px;
+    padding: 24px;
+  }
+  @media screen and (min-width: 1120px) {
+    display: flex;
+    gap: 32px;
+    padding: 32px;
+    padding-top: 0;
+  }
+}
+
+.prices__swiper {
+  height: 248px;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.prices__block {
+  display: flex;
+  width: 260px;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  height: 200px;
+  border-radius: 6px;
+  background: #fff;
+  @media screen and (min-width: 768px) {
+    display: none;
+
+  }
+}
+
+.prices__item_mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+}
+
+.prices__text {
+  color: #1b1c21;
+  font-family: TT Lakes;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+
+}
+
+.prices__text_grey {
+  min-width: 228px;
+  color: #7e7e82;
+  font-family: TT Lakes;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  opacity: 0.7218;
+}
+
+.prices__button {
+  display: flex;
+}
+
+.prices__order {
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+  padding-left: 12px;
+  gap: 8px;
+  margin-bottom: 16px;
+  margin-right: 16px;
+  min-width: 119px;
+  height: 32px;
+  border-radius: 16px;
+  background: #ff3e79;
+}
+
+.prices__order_table {
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+  padding-left: 12px;
+  gap: 8px;
+  min-width: 119px;
+  height: 32px;
+  border-radius: 16px;
+  background: #ff3e79;
+  max-width: 120px;
+}
+
+.order__text {
+  color: #fff;
+  text-align: right;
+  font-family: TT Lakes;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+  text-transform: uppercase;
+  
+}
+
+.order__icon {
+  width: 24px;
+}
+
+.prices__explain {
+  line-height: 20px;
+
+  @media screen and (min-width: 768px) {
+
+    max-width: 500px;
+    padding-left: 330px;
+  }
+  @media screen and (min-width: 1120px) {
+    padding: 0 32px 16px 32px;
+  }
+}
+
+.prices__commercial {
+  display: flex;
+  color: #1b1c21;
+  font-family: TT Lakes;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+
+  padding-bottom: 40px;
+  @media screen and (min-width: 768px) {
+
+    max-width: 421px;
+    padding-bottom: 47px;
+  }
+  @media screen and (min-width: 1120px) {
+    padding-left: 32px;
+    padding-bottom: 50px;
+    padding-left: 330px;
+  }
+}
+
+.table_price {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+   
+  }
+}
+
+.table__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 48px;
+  color: #1b1c21;
+  font-family: TT Lakes;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  background-color: white;
+  padding-left: 24px;
+  border-radius: 6px;
+}
+
+.table__divider {
+  width: 100%;
+  height: 1px;
+  background: #eaeaea;
+  margin-left: 24px;
+}
+
+.table__column_first {
+  flex: 7;
+  text-align: left;
+}
+
+.table__column_second {
+  flex: 2;
+}
+
+.table__column_third {
+  flex: 2;
+}
+
+.table__column_actions {
+  flex: 2;
+}
+
+.table__row_first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 24px;
+  width: 100%;
+  height: 48px;
+  color: #7e7e82;
+  font-family: TT Lakes;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  opacity: 0.7218;
+}
